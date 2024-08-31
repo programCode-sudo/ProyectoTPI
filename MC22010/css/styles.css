@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #afc8e6;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #577ac5;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    flex: 1;          /* Permite que main ocupe el espacio restante disponible */
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #afc8e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.list{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:  #afc8e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #849fd1;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #7692b8;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.responsive-image {
+    max-width: 100%;  /* La imagen no se extiende más allá del ancho del contenedor */
+    height: auto;     /* Mantiene la proporción original de la imagen */
+    display: block;   /* Elimina el espacio blanco debajo de la imagen */
+    margin: 0 auto;   /* Centra la imagen horizontalmente en su contenedor */
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+footer {
+    background: #577ac5;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;  /* Asegura que el footer esté en la parte inferior del contenido */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+}
