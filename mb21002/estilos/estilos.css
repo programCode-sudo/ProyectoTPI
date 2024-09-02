@@ -1,69 +1,233 @@
+/* Estilos generales */
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Estilos de la barra de navegación */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 1); /* Fondo semitransparente */
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Pegado a la parte superior */
+    left: 0;
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Sin margen inferior en el navbar */
+.navbar:hover {
+    background-color: rgb(35, 35, 35); /* Fondo opaco al pasar el ratón */
 }
 
 .logo {
-    height: 50px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Escalar el logo al pasar el ratón */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .nav-links li {
-    display: inline;
+    position: relative;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease, padding 0.3s ease;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #ff9900; /* Color de texto al pasar el ratón */
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ff9900; /* Subrayado al pasar el ratón */
 }
 
 /* Estilos del contenido principal */
 main {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto; /* Elimina el margen superior para que el contenido comience justo debajo del navbar */
+    margin-top: 130px; /* Ajusta este valor según la altura del navbar si es necesario */
 }
 
 h1 {
-    color: #333;
+    color: #1976d2;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 18px;
-    color: #666;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 video {
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: 100%;
+    border-radius: 8px;
 }
 
 /* Estilos del pie de página */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: rgba(51, 51, 51, 1);
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     width: 100%;
-    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+
+#piePagina {
+    color: whitesmoke;
+}
+
+.card-text{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* estilos de ventajas*/
+.feature-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 250px; /* Ajusta el ancho mínimo para los items */
+    margin-bottom: 20px;
+}
+
+.feature-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.textline1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Columnas específicas */
+
+
+.feature-row{
+    justify-content: center;
+}
+
+.col1, .col2, .col3 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 3px;
+}
+
+.row1{
+    display: flex;
+}
+
+
+.ventajas{
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto; /* Elimina el margen superior para que el contenido comience justo debajo del navbar */
+    margin-top: 130px;
+}
+
+/*implementacion*/
+.implementacion{
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto; /* Elimina el margen superior para que el contenido comience justo debajo del navbar */
+    margin-top: 130px;
+}
+
+.tablehelp{
+    border-color: #020609;
+    background: rgba(25, 118, 210, .05);
+    border-radius: 9px;
+    border-width: 90px;
+}
+
+.tablehelp-head{
+    text-align: left;
+    margin-top: 20px;
+    background-color: #1976d2;
+    padding: 5px;
+    border-radius: 9px;
+    color: white;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+}
+.list-item img {
+    margin-left: 8px;
+    height: 23px; /* Ajusta la altura de la imagen para que coincida con el tamaño del texto */
+}
+
+.code-container {
+    background-color: #444;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 1200px;
+    margin-top: 10px;
+}
+.code-container code {
+    display: block;
+    white-space: pre-wrap;
+}
+
+.glosario-angular{
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto; /* Elimina el margen superior para que el contenido comience justo debajo del navbar */
+    margin-top: 130px;
+}
+
+.glosario-p{
+    text-align: left;
+    max-width: 1900px;
+    margin-top: 15px;
 }

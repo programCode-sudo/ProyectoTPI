@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>glosario</title>
     <link rel="stylesheet" href="../mb21002/estilos/estilos.css">
 </head>
 <body>
@@ -14,16 +14,59 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Angular-Ventajas.html">ventajas de angular</a></li>
                 <li><a href="Implementacion-Angular.html">Implementacion</a></li>
-                <li><a href="servicios.html">Servicios de angular</a></li>
-                <li><a href="Casos-exito.html">Casos de exito</a></li>
+                <li><a href="servicios.html">Glosario angular</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Bienvenidos a Servicios</h1>
+    <main class="glosario-angular">
+        <h1>Glosario Angular</h1>
+        <h2 style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">architect</h2>
+        <p class="glosario-p" style="font-size: 18px;">Es una herramienta que utiliza la CLI para realizar tareas complejas, como la compilación y la ejecución de pruebas, de acuerdo con una configuración proporcionada.</p>
+        <p class="glosario-p" style="font-size: 18px;">El architect es un shell que ejecuta un constructor (definido en un paquete npm) con una configuración de destino dada.</p>
+        <p class="glosario-p" style="font-size: 18px;">En el archivo de configuración del espacio de trabajo, una sección de "architect" proporciona opciones de configuración para los architects constructores.</p>
+        <p class="glosario-p" style="font-size: 18px;">Por ejemplo, un constructor incorporado para el linting se define en el paquete @angular-devkit/build_angular: tslint, que utiliza la herramienta TSLint para realizar el linting, con una configuración especificada en un archivo tslint.json.</p>
+        <p class="glosario-p" style="font-size: 18px;">Utiliza el comando CLI ng run para invocar a un constructor especificando una configuración de destino asociada con ese constructor. Los integradores pueden agregar constructores para permitir que las herramientas y los flujos de trabajo se ejecuten a través de la Angular CLI. Por ejemplo, un constructor personalizado puede reemplazar las herramientas de terceros utilizadas por las implementaciones integradas para los comandos de la CLI, como ng build o ng test.</p>
+        
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">carga diferida</h2>
+        <p class="glosario-p" style="font-size: 18px;">Un proceso que acelera el tiempo de carga de la aplicación al dividir la aplicación en múltiples paquetes y cargarlos bajo demanda. Por ejemplo, las dependencias pueden cargarse de forma diferida según sea necesario en lugar de los módulos eager-loaded que requiere el módulo raíz y, por lo tanto, se cargan en el inicio.</p>
+        <p class="glosario-p" style="font-size: 18px;">El enrutador utiliza la carga diferida para cargar vistas secundarias solo cuando la vista principal está activada. Del mismo modo, puede crear elementos personalizados que se pueden cargar en una aplicación Angular cuando sea necesario.</p>
+        
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">carga diferencial</h2>
+        <p class="glosario-p" style="font-size: 18px;">Una técnica de compilación que crea dos paquetes para una aplicación. Un paquete más pequeño es para navegadores modernos. Un segundo paquete más grande permite que la aplicación se ejecute correctamente en navegadores más antiguos (como IE11) que no son compatibles con todas las API de navegador modernas.</p>
+        
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">carga dinámica de componentes</h2>
+        <p class="glosario-p" style="font-size: 18px;">Una técnica para agregar un componente al DOM en tiempo de ejecución. Requiere que excluya el componente de la compilación y luego lo conecte al marco de detección de cambios y manejo de eventos de Angular cuando lo agrega al DOM.</p>
+        
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">carga eager</h2>
+        <p class="glosario-p" style="font-size: 18px;">Los NgModules o componentes que se cargan en el lanzamiento se llaman eager-loaded, para distinguirlos de aquellos que se cargan en tiempo de ejecución (carga diferida).</p>
+        
+        
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">compilación ahead-of-time (AOT)</h2>
+        <p class="glosario-p" style="font-size: 18px;">La compilación ahead-of-time (AOT) de Angular convierte el código Angular HTML y TypeScript en código JavaScript durante la fase de compilación de una manera eficiente, antes de que el navegador descargue y ejecuta ese código.</p>
+        <p class="glosario-p" style="font-size: 18px;">Este es el mejor modo de compilación para entornos de producción, con un menor tiempo de carga y un mayor rendimiento en comparación con compilación just-in-time (JIT).</p>
+        <p class="glosario-p" style="font-size: 18px;">Al compilar tu aplicación utilizando la herramienta de línea de comandos ngc, puedes iniciar directamente a una module factory, por lo que no necesitas incluir el compilador Angular en tu paquete de JavaScript.</p>
+       
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">compilación just-in-time (JIT)</h2>
+        <p class="glosario-p" style="font-size: 18px;">El compilador Angular just-in-time (JIT) convierte tu código Angular HTML y TypeScript en código JavaScript eficiente en tiempo de ejecución, como parte del arranque.</p>
+        <p class="glosario-p" style="font-size: 18px;">La compilación JIT es el valor predeterminado (a diferencia de la compilación AOT) cuando ejecutas los comandos CLI ng build yng serve de Angular, y es una buena opción durante el desarrollo. El modo JIT no se recomienda para el uso en producción porque da como resultado grandes cargas útiles de aplicaciones que dificultan el rendimiento de arranque.</p>
+        
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">componente</h2>
+        <p class="glosario-p" style="font-size: 18px;">Una clase con el @Component() decorador que lo asocia con un compañero plantilla. Juntos, la clase de componente y la plantilla definen una vista. Un componente es un tipo especial de directiva. El decorador @Component() extiende el decorador @Directive() con características orientadas a plantillas.</p>
+        <p class="glosario-p" style="font-size: 18px;">Una clase de componente Angular es responsable de exponer los datos y manejar la mayor parte de la visualización de la vista y la lógica de interacción del usuario a través de enlace de datos.</p>
+        
+        <h2  style="text-align: left; background-color: azure; padding: 5px; border-radius: 5px;">decorador de clase</h2>
+        <p class="glosario-p" style="font-size: 18px;">Un decorador que aparece inmediatamente antes de una definición de clase, que declara que la clase es del tipo dado y proporciona metadatos adecuados para el tipo.</p>
+        <p class="glosario-p" style="font-size: 18px;">Los siguientes decoradores pueden declarar tipos de clase Angular:</p>
+        <ul style="text-align: left;">
+            <li><a>@Component ()</a></li>
+            <li><a>@Directive ()</a></li>
+            <li><a>@Pipe ()</a></li>
+            <li><a>@Injectable ()</a></li>
+            <li><a>@NgModule ()</a></li>
+        </ul>
     </main>
     <footer>
-        <p>© 2024 Nuestra Empresa</p>
+        <p>© 2024 Proyecto ues</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
