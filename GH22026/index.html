@@ -1,87 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyería Guarita - Calidad & Honradez desde 1992</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Django Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Joyería Guarita" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#rebajas">REBAJAS</a></li>
-            <li><a href="#pandora">Pandora</a></li>
-            <li><a href="#anillos">Anillos</a></li>
-            <li><a href="#pendientes">Pendientes</a></li>
-            <li><a href="#pulseras">Pulseras</a></li>
-            <li><a href="#collares">Colgantes y collares</a></li>
-            <li><a href="#relojes">Relojes</a></li>
-            <li><a href="#mas-joyas">Más joyas</a></li>
-            <li><a href="#marcas">Marcas</a></li>
-            <li><a href="#bebe">Bebé</a></li>
-            <li><a href="#comunion">Comunión</a></li>
-            <li><a href="#alianzas">Alianzas</a></li>
-            <li><a href="#outlet">Outlet</a></li>
-            <li><a href="#personalizados">Personalizados</a></li>
-        </ul>
-    </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Joyería Guarita</h1>
-            <p>Calidad & Honradez desde 1992</p>
-            <a href="#productos" class="cta-button">Ver Colección</a>
-        </div>
-    </section>
-
-    <section class="featured-products">
-        <h2>Productos Destacados</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="anillo-diamante.jpg" alt="Anillo de Diamante">
-                <div class="product-info">
-                    <h3>Anillo de Diamante</h3>
-                    <p class="price">€1,299.99</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="collar-perlas.jpg" alt="Collar de Perlas">
-                <div class="product-info">
-                    <h3>Collar de Perlas</h3>
-                    <p class="price">€599.99</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="reloj-oro.jpg" alt="Reloj de Oro">
-                <div class="product-info">
-                    <h3>Reloj de Oro</h3>
-                    <p class="price">€2,499.99</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="pulsera-plata.jpg" alt="Pulsera de Plata">
-                <div class="product-info">
-                    <h3>Pulsera de Plata</h3>
-                    <p class="price">€199.99</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-us">
-        <div class="about-us-content">
-            <h2>Sobre Nosotros</h2>
-            <p>Desde 1992, Joyería Guarita ha sido sinónimo de calidad y honradez en el mundo de la joyería fina. Nuestro compromiso con la excelencia y la atención personalizada nos ha convertido en un referente para quienes buscan piezas únicas y de alta calidad.</p>
-        </div>
-    </section>
+    <main>
+        <section id="home">
+            <h1>Welcome to Django</h1>
+            <p>The Web framework for perfectionists with deadlines.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </section>
+        
+        <!-- Sección de imagen -->
+        <section id="image-showcase">
+            <h2>Explore Django</h2>
+            <img src="img/django-home.jpg" alt="Django Showcase Image" class="responsive-img">
+        </section>
+        
+        <!-- Sección de video -->
+        <section id="video-intro">
+            <h2>Introduction to Django</h2>
+            <video controls width="600">
+                <source src="videos/django-intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Joyería Guarita. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Django Software Foundation</p>
     </footer>
 </body>
 </html>

@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Principal</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../mb21002/estilos/estilos.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <img src="img/logo.png" alt="Logo de la Empresa" class="logo">
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Angular-Ventajas.html">ventajas de angular</a></li>
-                <li><a href="Implementacion-Angular.html">Implementacion</a></li>
-                <li><a href="servicios.html">Servicios de angular</a></li>
-                <li><a href="Casos-exito.html">Casos de exito</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <img
+          src="../mb21002/img/logo.png"
+          alt="Logo de la Empresa"
+          class="logo"
+        />
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Angular-Ventajas.html">ventajas de angular</a></li>
+          <li><a href="Implementacion-Angular.html">Implementacion</a></li>
+          <li><a href="servicios.html">Glosario angular</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <h1>Bienvenidos a Nuestra Empresa</h1>
-        <p>Desarrollamos aplicaciones web innovadoras.</p>
-        <video controls>
-            <source src="recursos/VideoAngular.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-
-    </main>
+    <main class="container my-5">
+        <div class="card bg-light shadow-sm border-0 rounded">
+          <div class="card-body">
+            <h1 class="card-title">Bienvenidos a Proyecto Angular</h1>
+            <p class="card-text">
+              Si estás interesado en el desarrollo de software, es posible que hayas
+              oído hablar de Angular. Se trata de uno de los frameworks de
+              <a href="https://www.w3schools.com/js/DEFAULT.asp" data-wpel-link="internal">JavaScript</a>
+              más populares, que los desarrolladores utilizan para crear sitios web
+              dinámicos. En este artículo, aprenderás qué es Angular, el concepto de
+              AngularJS, cuándo se creó Angular por primera vez y sus ventajas.
+            </p>
+            <video controls class="img-fluid mt-3">
+              <source src="recursos/VideoAngular.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de videos.
+            </video>
+          </div>
+        </div>
+      </main>
     <footer>
-        <p>© 2024 Nuestra Empresa</p>
+      <p id="piePagina">© 2024 proyecto Ues</p>
     </footer>
-    <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
